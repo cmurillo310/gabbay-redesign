@@ -44,7 +44,7 @@ li a {
   font-weight: 550;
   letter-spacing: 1.7px;
 }
-
+/* --- Top Modules - Heroes --- */
 .homepage-hero {
   box-sizing: border-box;
   height: auto;
@@ -131,7 +131,7 @@ img {
   justify-content: center;
   background-color: #fafafa;
 }
-
+/* --- Secondary Modules --- */
 .bio-content, .bio-content-first, .bio-content-last {
   display: block;
   max-width: 1200px;
@@ -235,7 +235,7 @@ blockquote footer:after {
 .show-container {
   display: block;
   position: relative;
-  width: 300px;
+  width: 500px;
   margin-bottom: 30px;
 }
 
@@ -256,7 +256,8 @@ blockquote footer:after {
 }
 
 .show-container img {
-  width: 300px;
+  width: 500px;
+  height: 500px;
 }
 
 .overlay {
@@ -266,7 +267,7 @@ blockquote footer:after {
   left: 0;
   right: 0;
   height: 100%;
-  width: 300px;
+  width: 500px;
   opacity: 0;
   transition: .5s ease;
   background-color: #461B7E;
@@ -274,7 +275,7 @@ blockquote footer:after {
 
 .show-container:hover .overlay {
   opacity: 1;
-  width: 300px;
+  width: 500px;
 }
 
 .show-container .overlay-text {
@@ -290,6 +291,8 @@ blockquote footer:after {
 .mobile-show-container {
   display: none;
 }
+
+/* --- Third Modules --- */
 
 .reviews {
   background-color: #E1E1E1;
@@ -337,6 +340,8 @@ a.button:hover {
 .mobile-footer {
   display: none;
 }
+
+/* --- Footers --- */
 
 .footer {
   height: 100%;
