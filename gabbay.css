@@ -54,7 +54,7 @@ li a {
 
 .meet-hero {
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(102,51,153,1));
-  background-size: 100%;;
+  background-size: 100%;
   padding-bottom: 5px;
 }
 
@@ -131,6 +131,20 @@ img {
   justify-content: center;
   background-color: #fafafa;
 }
+
+.review-hero {
+  background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(102,51,153,1));
+  padding-bottom: 5px;
+}
+
+.review-hero-text {
+  width: 1000px;
+}
+
+.review-hero-text h1 {
+  font-size: 100px;
+}
+
 /* --- Secondary Modules --- */
 .bio-content, .bio-content-first, .bio-content-last {
   display: block;
@@ -307,10 +321,14 @@ blockquote footer:after {
   font-weight: bold;
 }
 
-.yelp-container {
+.yelp-container, .yelp-container-review {
   display: flex;
   justify-content: center;
   padding-bottom: 35px;
+}
+
+.yelp-container-review {
+  padding-top: 25px;
 }
 
 .button-container {
