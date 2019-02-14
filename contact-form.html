@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<head>
+  <link rel="stylesheet"
+  type="text/css"
+  href="gabbay.css">
+
+  <meta charset="utf-8">
+
+  <title>Contact David</title>
+
+</head>
+<body>
+<header>
+  <nav class="navigation">
+    <ul>
+      <li><a href="Homepage.html">Home</a></li>
+      <li><a href="meet-david.html">Meet David</a></li>
+      <li><a href="shows.html">Shows</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="review-hero">
+  <div class="hero-container">
+    <div class="review-hero-text">
+      <h1>Contact</h1>
+        </div>
+  </div>
+</section>
+
+</head>
+</head>
+
+<div class="contact-container">
+  <div class="contact-general-text">
+    <p>Ready to add some magic to your life? <br>Contact David directly for bookings, questions, or more information.</p>
+  </div>
+</div>
+
+<body>
+  <section class="contact-container">
+    <div class="contact-card">
+      <div class="contact-card-image">
+        <img src="gabbay_images/bio-hero.jpg" alt="A headshot of David">
+      </div>
+      <div class="contact-card-text">
+        <h2>Magic by <br>David Gabbay</h2>
+        <p>Phone: <br>310-562-6474</p>
+        <p>Bookings: <br>booking@gabbaymagic.com</p>
+        <p>Direct Email: <br>David@GabbayMagic.com</p>
+      </div>
+    </div>
+  </section>
+
+<div class="contact-container">
+  <div class="contact-general-text">
+    <p>Need some help getting the party started? Use the form below to send David an email about any events you're interested in, booking questions, or any other requests.</p>
+  </div>
+</div>
+
+
+<div class="contact-container">
+  <div class="form-container">
+    <h3>Contact David</h3>
+    <form method="POST" name="contactform" action="contact-form-handler.php">
+      <p>
+        <label for='name'>Your Name:</label> <br>
+        <input type="text" name="name" placeholder="First and Last Name">
+      </p>
+      <p>
+        <label for='company'>Phone Number:</label> <br>
+        <input type="text" name="company">
+      </p>
+      <p>
+        <label for='email'>Email Address:</label> <br>
+        <input type="text" name="email"> <br>
+      </p>
+      <p>
+      <label for="Show">Type of Show:</label>
+      <select id="Show" name="Show">
+	       <option value="stroling-magic">Strolling Magic</option>
+	       <option value="close-up-magic">Close-up Magic Show</option>
+	       <option value="magic-stage-show">Magic Stage Show</option>
+	       <option value="mentalist-show">Mentalist Show</option>
+        </select>
+      </p>
+      <p>
+        <label for='message'>Message:</label> <br>
+        <textarea name="message" style="height:200px"></textarea>
+      </p>
+      <input type="submit" value="Submit"><br>
+    </form>
+  </div>
+</div>
+
+<section class="footer">
+  <div>
+    <p>David Gabbay Magic</p>
+  </div>
+  <div>
+    <ul>
+      <li><a href="meet-david.html">Meet David</a></li>
+      <li><a href="shows.html">Shows</a></li>
+      <li><a href="Reviews">Reviews</a></li>
+      <li><a href="https://google.com">Contact</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- a helper script for vaidating the form-->
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email","Please enter a valid email address");
+</script>
+
+<!--
+Sample code from:
+http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+-->
+</body>
+</html>

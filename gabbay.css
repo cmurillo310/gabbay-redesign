@@ -66,9 +66,13 @@ li a {
   display: none;
 }
 
-.hero-container {
+.hero-container, .contact-container {
   display: flex;
   justify-content: center;
+}
+
+.contact-container {
+  background-color: #fafafa;
 }
 
 .hero-text {
@@ -126,6 +130,23 @@ img {
   height: 600px;
 }
 
+.shows-hero-image {
+  position: relative;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: white;
+  font-size: 54px;
+}
+
+.bottomleft h1 {
+  color: white;
+  font-size: 100px;
+}
+
 .meet-biography {
   display: flex;
   justify-content: center;
@@ -139,10 +160,39 @@ img {
 
 .review-hero-text {
   width: 1000px;
+  text-align: center;
 }
 
 .review-hero-text h1 {
   font-size: 100px;
+}
+
+.contact-card {
+  display: flex;
+  border: 1px #461B7E solid;
+  width: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-card h2 {
+  font-size: 32px;
+}
+
+.contact-card-image {
+  width: 50%;
+}
+
+.contact-card-text {
+  float: right;
+  height: 100%;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.contact-general-text {
+  text-align: center;
+  width: 700px;
+  margin: 20px 0px 20px 0px;
 }
 
 /* --- Secondary Modules --- */
@@ -304,6 +354,49 @@ blockquote footer:after {
 
 .mobile-show-container {
   display: none;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: white;
+  color: #461B7E;
+  padding: 12px 20px;
+  border: 1px white solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #461B7E;
+  color: white;
+  border: 1px white solid;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  margin-bottom: 35px;
+  border-radius: 5px;
+  background-color: #57229e;
+  padding: 20px;
+  width: 800px;
+}
+
+.form-container p, h3 {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* --- Third Modules --- */
