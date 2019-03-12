@@ -3,23 +3,24 @@
   <link rel="stylesheet"
   type="text/css"
   href="gabbay.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Magic Shows</title>
+  <title>Reviews</title>
 
 </head>
 <body>
 <header>
-  <nav class="navigation">
-    <ul>
-      <li><a href="Homepage.html">Home</a></li>
-      <li><a href="meet-david.html">Meet David</a></li>
-      <li><a href="shows.html">Shows</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="contact-form.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="topnav" id="myTopnav">
+    <a href="Homepage.html">David Gabbay Magic</a>
+    <a href="meet-david.html">Meet David</a>
+    <a href="shows.html">Shows</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact-form.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
 </header>
 
 <section class="review-hero">
@@ -129,5 +130,6 @@
 </section>
 
 <script async="async" src="https://www.yelp.com/embed/widgets.js"></script>
+<script src="scripts/top-nav.js"></script>
 </body>
 </html>

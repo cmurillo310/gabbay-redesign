@@ -3,23 +3,25 @@
   <link rel="stylesheet"
   type="text/css"
   href="gabbay.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>David Gabbay Magic</title>
 
 </head>
 <body>
 <header>
-  <nav class="navigation">
-    <ul>
-      <li><a href="Homepage.html">Home</a></li>
-      <li><a href="meet-david.html">Meet David</a></li>
-      <li><a href="shows.html">Shows</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="contact-form.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="topnav" id="myTopnav">
+    <a href="Homepage.html" class="topnav-active">David Gabbay Magic</a>
+    <a href="meet-david.html">Meet David</a>
+    <a href="shows.html">Shows</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact-form.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+
 </header>
 
 <section class="homepage-hero">
@@ -56,8 +58,10 @@
 
 
 <section class="show-hero">
+  <div class="mobile-show-intro-text">
   <h2>Magic Shows</h2>
   <p>David offers four different types of shows, each guaranteed to leave your guests mesmorized.</p>
+</div>
 
   <!--Small viewport module-->
   <section class="mobile-show-container">
@@ -65,7 +69,9 @@
     <div class="mobile-show-image">
       <img src="gabbay_images/strolling-300.jpg" alt="A picture of David performing a trick">
     </div>
+    <div class="mobile-show-text">
     <p>This show is perfect for wedding receptions, large birthday parties, or any social gathering. David will move through the crowd effortlessly charming your guests with magic tricks.</p>
+  </div>
     <a href="https://google.com">Learn More</a>
   </section>
   <section class="mobile-show-container">
@@ -73,7 +79,9 @@
     <div class="mobile-show-image">
       <img src="gabbay_images/closeup-magic-300.jpg" alt="A picture of David performing a trick">
     </div>
+        <div class="mobile-show-text">
     <p>This show is perfect for wedding receptions, large birthday parties, or any social gathering. David will move through the crowd effortlessly charming your guests with magic tricks.</p>
+  </div>
     <a href="https://google.com">Learn More</a>
   </section>
   <section class="mobile-show-container">
@@ -81,7 +89,9 @@
     <div class="mobile-show-image">
       <img src="gabbay_images/magic-stageshow-300.jpg" alt="A picture of David performing a trick">
     </div>
+        <div class="mobile-show-text">
     <p>This show is perfect for wedding receptions, large birthday parties, or any social gathering. David will move through the crowd effortlessly charming your guests with magic tricks.</p>
+  </div>
     <a href="https://google.com">Learn More</a>
   </section>
   <section class="mobile-show-container">
@@ -89,7 +99,9 @@
     <div class="mobile-show-image">
       <img src="gabbay_images/mentalist-300.jpg" alt="A picture of David performing a trick">
     </div>
+        <div class="mobile-show-text">
     <p>This show is perfect for wedding receptions, large birthday parties, or any social gathering. David will move through the crowd effortlessly charming your guests with magic tricks.</p>
+  </div>
     <a href="https://google.com">Learn More</a>
   </section>
   <!--Small viewport module-->
@@ -130,13 +142,14 @@
     </div>
   </section>
 </div>
-
-<p>Have something else in mind?<br>Contact David for special requests or more information.</p>
-<section class="button-container">
-  <div class="contact-button">
-    <a href="https://google.com" class="button">Contact</a>
+  <div class="contact-intro-text">
+    <p>Have something else in mind?<br>Contact David for special requests or more information.</p>
   </div>
-</section>
+  <section class="button-container">
+    <div class="contact-button">
+      <a href="https://google.com" class="button">Contact</a>
+    </div>
+  </section>
 </section>
 
 <section class="reviews">
@@ -184,5 +197,8 @@
 </section>
 
 <script async="async" src="https://www.yelp.com/embed/widgets.js"></script>
+<script src="scripts/top-nav.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="scripts/active-link.js"></script>
 </body>
 </html>

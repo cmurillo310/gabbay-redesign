@@ -3,23 +3,24 @@
   <link rel="stylesheet"
   type="text/css"
   href="gabbay.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Meet David Gabbay</title>
 
 </head>
 <body>
 <header>
-  <nav class="navigation">
-    <ul>
-      <li><a href="Homepage.html">Home</a></li>
-      <li><a href="meet-david.html">Meet David</a></li>
-      <li><a href="shows.html">Shows</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="contact-form.html">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="topnav" id="myTopnav">
+    <a href="Homepage.html">David Gabbay Magic</a>
+    <a href="meet-david.html">Meet David</a>
+    <a href="shows.html">Shows</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact-form.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </div>
 </header>
 
 <section class="meet-hero">
@@ -36,10 +37,10 @@
 </section>
 
 <!--Small viewport hero-->
-<section class="mobile-homepage-hero">
+<section class="mobile-meet-hero">
   <div class="mobile-hero-container">
     <div class="mobile-hero-text">
-      <h1>David Gabbay<br>Los Angeles Magician</h1>
+      <h1>David Gabbay</h1>
     </div>
     <div class="mobile-hero-image">
       <img src="gabbay_images/bio-hero.jpg" alt="A headshot of David">
@@ -86,11 +87,18 @@
       <div class="bio-image">
         <img src="gabbay_images/bio-show.jpg" alt="David performing a magic show">
       </div>
-      <blockquote>
-        <p><q>It took me twenty years to realize the magic is about them.</q></p>
-        <footer>David Gabbay</footer>
-      </blockquote>
-    </div>
+      <div class="review-blockquote-container">
+          <div class="testimonial-quote group">
+              <div class="quote-container">
+                  <blockquote>
+                      <p>It took me twenty years to realize the magic is about them.”</p>
+                  </blockquote>
+                  <cite><span>David Gabbay</span><br>
+                      2014
+                  </cite>
+              </div>
+          </div>
+        </div>
 
   </div>
 </section>
@@ -110,5 +118,6 @@
   </div>
 </section>
 
+<script src="scripts/top-nav.js"></script>
 </body>
 </html>
