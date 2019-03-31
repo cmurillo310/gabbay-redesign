@@ -94,7 +94,7 @@ p {
 }
 
 .meet-hero {
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(102,51,153,1));
+  background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(102,51,153,1));
   background-size: 100%;
   padding-bottom: 5px;
 }
@@ -104,6 +104,10 @@ p {
 
 .shows-hero {
   background-color: #080808;
+}
+
+.mobile-shows-hero {
+  display: none;
 }
 
 .mobile-homepage-hero {
@@ -345,6 +349,10 @@ img {
   justify-content: center;
 }
 
+.bio-image-mobile {
+  display: none;
+}
+
 .bio-image :first-child {
   margin-right: 20px;
 }
@@ -352,41 +360,6 @@ img {
 .bio-image img {
   height: 400px;
   margin: 20px 0 20px 0;
-}
-
-blockquote {
-  margin: 0 auto;
-  padding: 1em;
-  text-align: center;
-  border-right: 5px solid #461B7E;
-  max-width: 500px;
-
-}
-blockquote:before {
-  display: none;
-}
-blockquote:not(:first-of-type) {
-  margin-top: .5em;
-}
-blockquote p {
-  color: #555;
-  font-size: 14pt;
-  line-height: 1.4;
-}
-blockquote footer {
-  margin-top: .5em;
-  padding: 0;
-  color: #777;
-  font-size: 14pt;
-  text-align: center;
-  font-style: italic;
-}
-blockquote footer:before {
-  content: '';
-}
-
-blockquote footer:after {
-  content: ' —';
 }
 
 .show-hero {
@@ -772,18 +745,44 @@ a.button:hover {
   .navigation {
     height: 50px;
   }
-  .hero-container {
+  .homepage-hero {
     display: none;
   }
   .meet-hero {
     display: none;
   }
+  .shows-hero {
+    display: none;
+  }
+  .review-hero-text h1 {
+    font-size: 54px;
+  }
   .mobile-homepage-hero, .mobile-meet-hero {
     display: flex;
     justify-content: center;
   }
+  .mobile-shows-hero {
+    display: block;
+  }
+  .show-intro-text {
+    margin-top: auto;
+  }
+  .mobile-shows-hero img {
+    margin: 0px;
+  }
+  .bottomleft {
+    position: relative;
+    bottom: 55px;
+    left: 16px;
+    width: 200px;
+    height: 0px;
+  }
+  .bottomleft h1 {
+    color: white;
+    font-size: 48px;
+  }
   .mobile-meet-hero {
-    background-image: linear-gradient(to bottom right, rgba(255,0,0,0), rgba(102,51,153,1));
+    background-image: linear-gradient(to top right, rgba(255,0,0,0), rgba(102,51,153,1));
   }
   .mobile-hero-text {
     text-align: center;
@@ -814,15 +813,6 @@ a.button:hover {
   .box {
     display: none;
   }
-
-  blockquote {
-  padding: 1em 20% 1em 1em;
-  }
-
-  blockquote p {
-  font-size: 14pt;
-  }
-
   .mobile-show-intro-text p {
     width: 365px;
     margin-left: auto;
@@ -834,7 +824,7 @@ a.button:hover {
   .mobile-show-container h3 {
     padding-top: 10px;
   }
-  .mobile-show-text {
+  .mobile-show-text  {
     display: flex;
     justify-content: center;
   }
@@ -864,16 +854,71 @@ a.button:hover {
   /*Meet David mobile modules*/
   .bio-content-first, .bio-content, .bio-content-last {
     text-align: center;
-    border: 1px red solid;
-    padding: 0px 20px 0px 20px;
   }
   .bio-image {
+    display: none;
+  }
+  .bio-image-mobile {
     display: block;
-    justify-content: center;
+  }
+  .bio-image-mobile img {
+    margin-left: auto;
+    margin-right: auto;
   }
   .bio-content h2, .bio-content-first h2, .bio-content-last h2 {
     text-align: center;
   }
+  .bio-content-first, .bio-content, .bio-content-last p {
+    width: 365px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Blockquotes*/
+  .review-blockquote-container {
+    width: 350px;
+    padding: 40px 0px 30px 0px;
+    margin: 0px;
+  }
+  .testimonial-quote .quote-container {
+    padding-left: 0px;
+  }
+  .testimonial-quote .quote-container p {
+    width: 350px;
+  }
+  .testimonial-quote img {
+      border: 2px solid #461B7E;
+      position: relative;
+      left: 35%;
+  }
+  .testimonial-quote blockquote p:first-child:before {
+      content: '\201C';
+      color: #81bedb;
+      font-size: 4em;
+      font-weight: 700;
+      opacity: .3;
+      position: absolute;
+      top: -.4em;
+      left: .1em;
+      text-shadow: none;
+      z-index: -300;
+  }
+  cite {
+    text-align: center;
+  }
+  /*Meet David mobile modules*/
+  .show-intro-text {
+    margin-top: 0px;
+  }
+  /* --- Shows Modules --- */
+  .show-content-first h2, .show-content h2, .show-content-last h2 {
+    font-size: 44px;
+  }
+  .show-content-first, .show-content, .show-content-last, p {
+    text-align: center;
+    width: 365px;
+  }
+
+  /* --- Shows Modules --- */
 
   /* --- Footers --- */
   .footer {
