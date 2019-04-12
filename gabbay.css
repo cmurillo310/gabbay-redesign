@@ -24,7 +24,7 @@ p {
   line-height: 1.3;
 }
 
-@media screen and (min-width: 762px) and (max-width: 1199px) {
+@media screen and (min-width: 762px) and (max-width: 1600px) {
   h1, h2, h3, h4 {
     font-size: 32px;
   }
@@ -114,13 +114,17 @@ p {
   display: none;
 }
 
-.hero-container, .contact-container {
+.hero-container, .contact-container, .contact-container-card, .contact-container-form {
   display: flex;
   justify-content: center;
 }
 
-.contact-container {
+.contact-container, .contact-container-card, .contact-container-mobile, .contact-container-form {
   background-color: #fafafa;
+}
+
+.contact-container-mobile {
+  display: none;
 }
 
 .hero-text {
@@ -129,7 +133,7 @@ p {
   margin: 20px 10px 20px 0px;
 }
 
-@media screen and (min-width: 762px) and (max-width: 1199px) {
+@media screen and (min-width: 762px) and (max-width: 1600px) {
   .hero-text {
     padding-left: 25px;
   }
@@ -138,7 +142,7 @@ p {
 .meet-hero-text {
   display: block;
   width: 600px;
-  margin: 20px 10px 20px 0px;
+  margin: 20px 10px 20px 20px;
 }
 
 .hero-text h1 {
@@ -153,7 +157,7 @@ p {
   font-size: 20px;
 }
 
-@media screen and (min-width: 762px) and (max-width: 1199px) {
+@media screen and (min-width: 762px) and (max-width: 1600px) {
   .hero-text a {
     font-size: 18px;
   }
@@ -176,15 +180,22 @@ img {
   margin: 20px 0px 20px 10px;
 }
 
-@media screen and (min-width: 762px) and (max-width: 1199px) {
+@media screen and (min-width: 762px) and (max-width: 1600px) {
   .hero-image {
     margin-right: 25px;
   }
 }
 
 .meet-hero-image {
-  margin: 20px 150px 20px 0px;
+  margin: 20px 20px 20px 20px;
   width: 300px;
+}
+
+@media screen and (min-width: 762px) and (max-width: 1600px) {
+  .meet-hero-image {
+    margin: 20px 20px 20px 20px;
+    width: 250px;
+  }
 }
 
 .meet-hero-image img {
@@ -222,6 +233,12 @@ img {
   display: flex;
   justify-content: center;
   background-color: #fafafa;
+}
+
+@media screen and (min-width: 762px) and (max-width: 1600px) {
+  .show-content-first, .show-content,.show-content-last {
+    margin: 0px 20px 0px 20px;
+  }
 }
 
 .show-strolling-section {
@@ -303,7 +320,7 @@ img {
   font-size: 54px;
 }
 
-@media screen and (min-width: 762px) and (max-width: 1199px) {
+@media screen and (min-width: 762px) and (max-width: 1600px) {
   .show-hero h2 {
     font-size: 32px;
   }
@@ -315,17 +332,29 @@ img {
   position: relative;
 }
 
-
-
 .show-content-text {
   position: relative;
   margin-bottom: 35px;
 }
 
-
+@media screen and (min-width: 762px) and (max-width: 1600px) {
+  .show-intro-text p, .show-content-text p {
+    font-size: 20px
+  }
+}
 .bio-content, .bio-content-first, .bio-content-last {
   display: block;
-  max-width: 1200px;
+  max-width: 1100px;
+}
+@media screen and (min-width: 762px) and (max-width: 1600px) {
+  .bio-content, .bio-content-first, .bio-content-last {
+    display: block;
+    max-width: 800px;
+    margin: 0px 20px 0px 20px;
+  }
+}
+  .bio-content p, .bio-content-first p, .bio-content-last p {
+    font-size: 20px;
 }
 
 .bio-content h2, .bio-content-first h2, .bio-content-last h2 {
@@ -355,6 +384,12 @@ img {
 
 .bio-image :first-child {
   margin-right: 20px;
+}
+
+@media screen and (min-width: 762px) and (max-width: 1600px) {
+  .bio-image :first-child {
+    margin-right: 0px;
+  }
 }
 
 .bio-image img {
@@ -441,12 +476,11 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 762px) and (max-width: 1199px) {
+@media screen and (min-width: 762px) and (max-width: 1600px) {
   .box {
     display: flex;
     justify-content: center;
   }
-
   .show-container {
     display: block;
     position: relative;
@@ -714,7 +748,7 @@ a.button:hover {
   justify-content: center;
 }
 
-@media screen and (min-width: 325px) and (max-width: 761px) {
+@media screen and (min-width: 375px) and (max-width: 761px) {
   h1, h2, h3, h4 {
     color: #461B7E;
     font-size: 28px;
@@ -877,7 +911,7 @@ a.button:hover {
   .review-blockquote-container {
     width: 350px;
     padding: 40px 0px 30px 0px;
-    margin: 0px;
+    margin: 0 auto;
   }
   .testimonial-quote .quote-container {
     padding-left: 0px;
@@ -917,9 +951,62 @@ a.button:hover {
     text-align: center;
     width: 365px;
   }
-
   /* --- Shows Modules --- */
+  /* --- Contact Modules --- */
+  .contact-container-card {
+    display: none;
+  }
+  .contact-container-mobile {
+    display: flex;
+    justify-content: center;
+  }
 
+  .contact-card {
+    display: inline-block;
+    border: 1px #461B7E solid;
+    width: 345px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .contact-card-text {
+    padding: 0px;
+    width: 345px;
+    border-top: 1px #461B7E solid;
+    height: auto;
+  }
+  .contact-card-text p {
+    width: 345px;
+  }
+  .contact-card-text h2 {
+    text-align: center;
+  }
+  .contact-card-image {
+    width: 100%;
+  }
+  .contact-card-image img {
+    margin: 0px;
+    width: 100%;
+  }
+  .contact-general-text {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-container-form {
+    display: flex;
+    justify-content: center;
+  }
+  .form-container {
+    padding: 15px;
+    width: 340px;
+  }
+  .form-container p {
+    width: 340px;
+  }
+
+
+  .form-container h3 {
+    text-align: center;
+  }
+  /* --- Contact Modules --- */
   /* --- Footers --- */
   .footer {
     display: block;
