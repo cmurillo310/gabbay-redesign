@@ -720,6 +720,44 @@ a.button:hover {
     padding-left: 160px;
 }
 
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  border: 1px red solid;
+}
+
+.logo-banner, .logo-banner-bottom {
+  width: auto;
+}
+
+.logo-banner {
+  padding-bottom: 5px;
+}
+
+.logo-banner-bottom {
+  padding: 5px 0px 15px 0px;
+}
+
+.logo-banner img, .logo-banner-bottom img {
+  float: left;
+  height: 100px;
+  padding: 0px 20px 5px 20px;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1000px) {
+  .logo-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-banner img, .logo-banner-bottom img {
+    height: 80px;
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.logo-wrapper-mobile, .logo-text-mobile, .logo-banner-mobile, .logo-banner-bottom-mobile {
+  display: none;
+}
 
 /* --- Footers --- */
 
@@ -878,6 +916,9 @@ a.button:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  .contact-intro-text {
+    border: 1px red solid;
+  }
   .contact-intro-text p {
     margin: 10px 0px 10px 0px;
   }
@@ -1001,12 +1042,28 @@ a.button:hover {
   .form-container p {
     width: 340px;
   }
-
-
   .form-container h3 {
     text-align: center;
   }
-  /* --- Contact Modules --- */
+  /* --- Contact Modules -- END --- */
+  .logo-wrapper, .logo-text, .logo-banner, .logo-banner-bottom {
+    display: none;
+  }
+  .logo-wrapper-mobile, .logo-text-mobile, .logo-banner-mobile, .logo-banner-bottom-mobile {
+    display: contents;
+  }
+  .logo-wrapper-mobile {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .logo-text-mobile p {
+    text-align: center;
+  }
+  .logo-banner-mobile img, .logo-banner-bottom-mobile img {
+    height: 70px;
+  }
+
   /* --- Footers --- */
   .footer {
     display: block;
