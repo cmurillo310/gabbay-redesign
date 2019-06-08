@@ -303,6 +303,18 @@ img {
   padding-left: 10px;
 }
 
+.contact-card-text p {
+  padding-bottom: 0px;
+  font-size: 20px;
+  font-weight: 350;
+}
+
+.contact-card-text a {
+  display: inline-block;
+  margin: 8px 0px 8px 0px;
+  font-size: 18px;
+}
+
 .contact-general-text {
   text-align: center;
   width: 700px;
@@ -723,7 +735,11 @@ a.button:hover {
 .logo-wrapper {
   display: flex;
   justify-content: center;
-  border: 1px red solid;
+}
+
+.logo-text h2 {
+  padding-top: 15px;
+  font-size: 28px;
 }
 
 .logo-banner, .logo-banner-bottom {
@@ -731,17 +747,28 @@ a.button:hover {
 }
 
 .logo-banner {
-  padding-bottom: 5px;
+  margin: 10px 0px 10px 0px;
+
 }
 
 .logo-banner-bottom {
-  padding: 5px 0px 15px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
-.logo-banner img, .logo-banner-bottom img {
-  float: left;
-  height: 100px;
-  padding: 0px 20px 5px 20px;
+.logo-container {
+  display: inline-block;
+  height: 70px;
+}
+
+.logo-banner img {
+  height: 100%;
+  width: 160px;
+  margin: 0px 10px 10px 10px;
+}
+
+.logo-banner-bottom img {
+  height: 100%;
+  width: 160px;
 }
 
 @media screen and (min-width: 761px) and (max-width: 1000px) {
@@ -749,9 +776,15 @@ a.button:hover {
     display: flex;
     justify-content: center;
   }
-  .logo-banner img, .logo-banner-bottom img {
-    height: 80px;
-    padding: 0px 10px 0px 10px;
+  .logo-banner img {
+    height: 100%;
+    width: 120px;
+    margin: 0px 10px 10px 10px;
+  }
+
+  .logo-banner-bottom img {
+    height: 100%;
+    width: 120px;
   }
 }
 
@@ -768,7 +801,12 @@ a.button:hover {
   background-color: #461B7E;
 }
 
-.footer p {
+.footer div {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-title p {
   color: white;
   font-size: 26px;
   font-weight: 550;
@@ -776,17 +814,43 @@ a.button:hover {
   margin-top: 30px;
 }
 
+a[href^="tel:"]:before {
+  content: "\260e";
+  margin-right: 0.5em;
+}
+
+.footer-containers a[href^="tel:"] a[href^="mailto:"] {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.7px;
+}
+
+.footer-contact-email {
+  margin-right: 25px;
+  padding-top: 5px;
+}
+.footer-contact-phone {
+  padding-bottom: 5px;
+}
 .footer ul {
-  margin: 10px 0px 50px 0px;
+  margin: 20px 0px 50px 0px;
   padding: 0px;
+  list-style-type: none;
 }
 
-.footer div {
-  display: flex;
-  justify-content: center;
+.footer li {
+  display: inline-grid;
+  padding-right: 3px;
+  font-size: 16px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 761px) {
+.footer a:visited {
+  color: white;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 761px) {
   h1, h2, h3, h4 {
     color: #461B7E;
     font-size: 28px;
@@ -832,6 +896,7 @@ a.button:hover {
   .mobile-homepage-hero, .mobile-meet-hero {
     display: flex;
     justify-content: center;
+    background-color: #fafafa;
   }
   .mobile-shows-hero {
     display: block;
@@ -885,6 +950,9 @@ a.button:hover {
   .box {
     display: none;
   }
+  .mobile-show-intro-text h2 {
+    padding-top: 10px;
+  }
   .mobile-show-intro-text p {
     width: 365px;
     margin-left: auto;
@@ -917,10 +985,12 @@ a.button:hover {
     margin-right: auto;
   }
   .contact-intro-text {
-    border: 1px red solid;
+    padding-bottom: 20px;
   }
   .contact-intro-text p {
-    margin: 10px 0px 10px 0px;
+    margin: 15px 0px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .contact-button a {
     font-size: 28px;
@@ -1006,6 +1076,7 @@ a.button:hover {
     display: inline-block;
     border: 1px #461B7E solid;
     width: 345px;
+    padding-bottom: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .contact-card-text {
@@ -1014,8 +1085,13 @@ a.button:hover {
     border-top: 1px #461B7E solid;
     height: auto;
   }
+  .contact-card-text a[href^="mailto:"] {
+    display: flex;
+    justify-content: center;
+  }
   .contact-card-text p {
     width: 345px;
+    padding: 0px;
   }
   .contact-card-text h2 {
     text-align: center;
@@ -1057,11 +1133,31 @@ a.button:hover {
     justify-content: center;
     width: auto;
   }
-  .logo-text-mobile p {
+  .logo-text-mobile h2 {
     text-align: center;
+    padding: 10px 10px 10px 10px;
   }
   .logo-banner-mobile img, .logo-banner-bottom-mobile img {
     height: 70px;
+  }
+  .logo-container {
+    margin-bottom: 15px;
+  }
+
+  .logo-banner-mobile img[src="gabbay_images/logos/3m-logo-150.jpg"] {
+    margin-right: 15px;
+  }
+  .logo-banner-bottom-mobile img[src="gabbay_images/logos/disney-logo-150.jpg"] {
+    margin-right: 15px;
+  }
+  .logo-banner-bottom-mobile img[src="gabbay_images/logos/sour-logo-150.jpg"] {
+    margin-right: 15px;
+  }
+  .logo-banner-bottom-mobile img[src="gabbay_images/logos/ea-logo-150.jpg"] {
+    margin-right: 15px;
+  }
+  .logo-banner-bottom-mobile img[src="gabbay_images/logos/toms-logo-150.jpg"] {
+    margin-right: 15px;
   }
 
   /* --- Footers --- */
