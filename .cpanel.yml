@@ -1,5 +1,0 @@
----
-  deployment:
-    tasks:
-       - export DEPLOYPATH=/home/bjpco0e3q8k2/public_html/
-       - /bin/cp -R gabbay-redesign $DEPLOYPATH
