@@ -594,7 +594,14 @@ input[type=submit]:hover {
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+.thanks-container {
+  height: 65vh;
+  text-align: center;
+}
 
+.thanks-container h1 {
+  padding-top: 14%;
+}
 /* --- Third Modules --- */
 
 .reviews {
@@ -1120,6 +1127,9 @@ a[href^="tel:"]:before {
   }
   .form-container h3 {
     text-align: center;
+  }
+  .thanks-container {
+
   }
   /* --- Contact Modules -- END --- */
   .logo-wrapper, .logo-text, .logo-banner, .logo-banner-bottom {
