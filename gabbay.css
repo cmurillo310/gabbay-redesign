@@ -928,10 +928,13 @@ a[href^="tel:"]:before {
   .mobile-meet-hero {
     background-image: linear-gradient(to top right, rgba(255,0,0,0), rgba(102,51,153,1));
   }
+  .mobile-hero-container {
+    width: 100%;
+  }
   .mobile-hero-text {
     text-align: center;
-    width: 100%;
-    margin-top: 10px;
+    width: auto;
+    margin: 10px 10px 5px 10px;
   }
   .mobile-hero-text h1 {
     margin-top: 0px;
@@ -945,7 +948,7 @@ a[href^="tel:"]:before {
     border-radius: 50%;
   }
   .mobile-hero-text p {
-    width: 365px;
+    width: 100%;
   }
   .mobile-hero-link {
     display: flex;
@@ -961,7 +964,7 @@ a[href^="tel:"]:before {
     padding-top: 10px;
   }
   .mobile-show-intro-text p {
-    width: 365px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -974,9 +977,11 @@ a[href^="tel:"]:before {
   .mobile-show-text  {
     display: flex;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .mobile-show-text p {
-    width: 365px;
+    width: 100%;
   }
   .mobile-show-container:before, .contact-intro-text::before {
     content: ""; /* This is necessary for the pseudo element to work. */
@@ -1002,10 +1007,18 @@ a[href^="tel:"]:before {
   .contact-button a {
     font-size: 28px;
   }
+  .hero-container p {
+    padding-bottom: 20px;
+  }
 
   /*Meet David mobile modules*/
+  .wrapper {
+    width: 100%;
+  }
   .bio-content-first, .bio-content, .bio-content-last {
     text-align: center;
+    width: auto;
+    margin: 0px 10px 0px 10px;
   }
   .bio-image {
     display: none;
@@ -1020,14 +1033,12 @@ a[href^="tel:"]:before {
   .bio-content h2, .bio-content-first h2, .bio-content-last h2 {
     text-align: center;
   }
-  .bio-content-first, .bio-content, .bio-content-last p {
-    width: 365px;
-    margin-left: auto;
-    margin-right: auto;
+  .bio-content-first p, .bio-content p, .bio-content-last p {
+    width: auto;
   }
   /*Blockquotes*/
   .review-blockquote-container {
-    width: 350px;
+    width: 100%;
     padding: 40px 0px 30px 0px;
     margin: 0 auto;
   }
@@ -1035,7 +1046,7 @@ a[href^="tel:"]:before {
     padding-left: 0px;
   }
   .testimonial-quote .quote-container p {
-    width: 350px;
+    width: 100%;
   }
   .testimonial-quote img {
       border: 2px solid #461B7E;
@@ -1057,17 +1068,20 @@ a[href^="tel:"]:before {
   cite {
     text-align: center;
   }
-  /*Meet David mobile modules*/
+  /*Shows modules*/
   .show-intro-text {
-    margin-top: 0px;
+    padding-top: 10px;
   }
   /* --- Shows Modules --- */
   .show-content-first h2, .show-content h2, .show-content-last h2 {
-    font-size: 44px;
+    font-size: 28px;
+    padding-top: 10px;
   }
-  .show-content-first, .show-content, .show-content-last, p {
+  .show-content-first, .show-content, .show-content-last {
+    margin: 0px 10px 0px 10px;
+  }
+  .show-content-first p, .show-content p, .show-content-last, p {
     text-align: center;
-    width: 365px;
   }
   /* --- Shows Modules --- */
   /* --- Contact Modules --- */
@@ -1082,13 +1096,13 @@ a[href^="tel:"]:before {
   .contact-card {
     display: inline-block;
     border: 1px #461B7E solid;
-    width: 345px;
+    width: 100%;
     padding-bottom: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .contact-card-text {
     padding: 0px;
-    width: 345px;
+    width: auto;
     border-top: 1px #461B7E solid;
     height: auto;
   }
@@ -1097,7 +1111,7 @@ a[href^="tel:"]:before {
     justify-content: center;
   }
   .contact-card-text p {
-    width: 345px;
+    width: 335px;
     padding: 0px;
   }
   .contact-card-text h2 {
@@ -1113,23 +1127,25 @@ a[href^="tel:"]:before {
   .contact-general-text {
     display: flex;
     justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contact-general-text p {
+    width: 100%;
   }
   .contact-container-form {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .form-container {
-    padding: 15px;
-    width: 340px;
+    width: 100%;
   }
   .form-container p {
-    width: 340px;
+    width: 100%;
   }
   .form-container h3 {
     text-align: center;
-  }
-  .thanks-container {
-
   }
   /* --- Contact Modules -- END --- */
   .logo-wrapper, .logo-text, .logo-banner, .logo-banner-bottom {
@@ -1183,5 +1199,8 @@ a[href^="tel:"]:before {
   .footer li {
     display: inline-block;
     margin-bottom: 20px;
+  }
+  .footer a {
+    color: white;
   }
 }
